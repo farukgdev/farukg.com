@@ -25,7 +25,7 @@
   --text-muted: #9ca3af;     /* secondary text */
   --text-label: #6b7280;     /* labels, meta */
 
-  /* Accent (Download APK) – darker, more muted teal */
+  /* Accent (primary action) – darker, more muted teal */
   --accent: #197d9a;       /* primary accent */
   --accent-hover: #145f79; /* slightly darker on hover */
   --accent-text: #e5e7eb;    /* text on accent */

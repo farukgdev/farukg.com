@@ -153,4 +153,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // Platform-aware Play Store link
+  const playLink = document.getElementById("play-store-link");
+  if (playLink) {
+    const ua = navigator.userAgent || navigator.vendor || "";
+    const isAndroid = /Android/i.test(ua);
+
+    if (isAndroid) {
+      // Open directly in the Play Store app when possible
+      playLink.href = "market://details?id=com.farukg.tictactoe";
+      playLink.removeAttribute("target");
+      playLink.removeAttribute("rel");
+    }
+  }
 });
