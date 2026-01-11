@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faruk Gokceoglu – Android developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Faruk Gokceoglu, Android developer shipping small, minimalist apps — on the path to bigger ideas. Featuring a Tic Tac Toe app with Classic, Ultimate, and Infinite modes."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="wrap">
+          <div class="header-inner">
+            <div class="brand">farukg<em>.com</em></div>
+            <nav class="header-nav">
+              <a href="https://github.com/farukgdev" class="header-link" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+              <a href="#contact" class="header-link">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro">
+          <div class="wrap">
+            <h1>Faruk Gokceoglu</h1>
+            <p class="intro-tagline">
+              Android developer shipping small, minimalist apps — on the path to bigger ideas.
+            </p>
+          </div>
+        </section>
+
+        <section class="section project" id="project">
+          <div class="wrap">
+            <h2 class="section-heading">Featured app</h2>
+
+            <article class="project-summary">
+              <div class="project-summary-main">
+                <div class="project-icon">
+                  <img src="assets/images/app-icon.png" alt="Tic Tac Toe app icon" />
+                </div>
+                <div class="project-summary-text">
+                  <p class="project-label">ANDROID</p>
+                  <h3 class="project-name">Tic Tac Toe – Ultimate &amp; Infinite</h3>
+                  <p class="project-one-liner">Three modes in one minimal app: Classic, Ultimate, and Infinite.</p>
+                </div>
+              </div>
+              <div class="project-summary-actions">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.farukg.tictactoe"
+                  class="btn btn-primary"
+                  id="play-store-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Play
+                </a>
+              </div>
+
+              <div class="project-tech">
+                <div class="pill-row">
+                  <span class="pill">Kotlin</span>
+                  <span class="pill">Jetpack Compose</span>
+                  <span class="pill">MVVM</span>
+                  <span class="pill">Hilt</span>
+                  <span class="pill">Coroutines &amp; Flow</span>
+                  <span class="pill">DataStore &amp; SharedPreferences</span>
+                  <span class="pill">Firebase (Analytics, Crashlytics, Remote Config)</span>
+                  <span class="pill">AdMob + UMP</span>
+                  <span class="pill">Baseline Profiles</span>
+                </div>
+              </div>
+            </article>
+
+            <div class="project-body">
+              <div class="project-text">
+                <p>
+                  The app is meant to feel quiet: minimal UI and only a few screens. The board stays in focus with very
+                  little around it.
+                </p>
+                <p>
+                  It includes offline AI with multiple difficulty levels and local multiplayer against another human.
+                </p>
+
+                <h3>Modes</h3>
+                <ul class="project-modes">
+                  <li>
+                    <strong>Classic:</strong>
+                    standard 3×3 Tic Tac Toe for quick games.
+                  </li>
+                  <li>
+                    <strong>Ultimate:</strong>
+                    nine small boards form one larger board. Each move sends the opponent to a specific board; win small
+                    boards to claim the big board.
+                  </li>
+                  <li>
+                    <strong>Infinite:</strong>
+                    a 3×3 board where marks age and disappear. From the 4th move onward, the oldest mark cycles off so
+                    positions keep changing and games don’t end in draws.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-screens">
+                <h3>Screens</h3>
+                <div class="screen-strip" aria-label="App screenshots">
+                  <figure class="screen-item">
+                    <div class="screen-frame">
+                      <img src="assets/images/screen-classic.png" alt="Classic mode board" />
+                    </div>
+                    <figcaption>Classic board</figcaption>
+                  </figure>
+
+                  <figure class="screen-item">
+                    <div class="screen-frame">
+                      <img src="assets/images/screen-ultimate.png" alt="Ultimate mode board" />
+                    </div>
+                    <figcaption>Ultimate board</figcaption>
+                  </figure>
+
+                  <figure class="screen-item">
+                    <div class="screen-frame">
+                      <img src="assets/images/screen-infinite.png" alt="Infinite mode board" />
+                    </div>
+                    <figcaption>Infinite board</figcaption>
+                  </figure>
+
+                  <figure class="screen-item">
+                    <div class="screen-frame">
+                      <img src="assets/images/screen-setup.png" alt="Home screen with mode and difficulty sheet" />
+                    </div>
+                    <figcaption>Home with setup sheet</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <details class="project-notes">
+              <summary>
+                <span class="notes-chevron" aria-hidden="true">
+                  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <polyline
+                      points="3 4.5 6 7.5 9 4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="notes-label">Technical notes</span>
+              </summary>
+              <ul>
+                <li>Ultimate mode AI uses a neural Monte Carlo Tree Search.</li>
+                <li>Infinite mode uses a custom perfect-play engine tailored to the aging-board rules.</li>
+                <li>
+                  During development, a specific forced-win strategy in Infinite mode was discovered; an optional
+                  opening rule in Settings can disable that strategy.
+                </li>
+              </ul>
+            </details>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="wrap">
+            <h2>Contact</h2>
+
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <div class="contact-info">
+                <a href="mailto:farukg.dev@gmail.com" class="contact-email" id="contact-email">
+                  farukg.dev@gmail.com
+                </a>
+                <button class="copy-btn" id="copy-email-btn" type="button">Copy</button>
+                <span class="copy-status" id="copy-status" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-label">GitHub</span>
+              <div class="contact-info">
+                <a href="https://github.com/farukgdev" target="_blank" rel="noopener noreferrer"> /farukgdev </a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-label">LinkedIn</span>
+              <div class="contact-info">
+                <a href="https://www.linkedin.com/in/farukgdev" target="_blank" rel="noopener noreferrer">
+                  /farukgdev
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <span>© <span id="copyright-year"></span> Faruk Gokceoglu</span>
+          <a href="/privacy" class="footer-link">Privacy</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
