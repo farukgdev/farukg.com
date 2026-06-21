@@ -1,0 +1,24 @@
+User-agent: Googlebot
+Disallow: /projects/puzzle
+Disallow: /projects/puzzle/
+Allow: /
+
+User-agent: Bingbot
+Disallow: /projects/puzzle
+Disallow: /projects/puzzle/
+Allow: /
+
+User-agent: Twitterbot
+Disallow: /projects/puzzle
+Disallow: /projects/puzzle/
+Allow: /
+
+User-agent: facebookexternalhit
+Disallow: /projects/puzzle
+Disallow: /projects/puzzle/
+Allow: /
+
+User-agent: *
+Disallow: /projects/puzzle
+Disallow: /projects/puzzle/
+Allow: /
